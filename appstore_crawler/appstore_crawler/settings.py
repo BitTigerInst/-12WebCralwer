@@ -56,6 +56,19 @@ ROBOTSTXT_OBEY = True
 #    'appstore_crawler.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'appstore_crawler.random_useragent.RandomUserAgentMiddleware': 400,
+    'scrapyjs.SplashMiddleware': 725,
+   # 'appstore_crawler.random_proxy.RandomProxy': 100
+}
+
+SPLASH_URL = 'http://192.168.99.100:8050'
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapyjs.SplashMiddleware': 725,
+# }
+DUPEFILTER_CLASS = 'scrapyjs.SplashAwareDupeFilter'
+HTTPCACHE_STORAGE = 'scrapyjs.SplashAwareFSCacheStorage'
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
@@ -73,7 +86,7 @@ ITEM_PIPELINES = {
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Xiaomi"
-MONGODB_COLLECTION = "Homepage"
+MONGODB_COLLECTION = "appdate"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

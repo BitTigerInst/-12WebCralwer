@@ -15,3 +15,7 @@ class AppstoreCrawlerItem(scrapy.Item):
     url = scrapy.Field()
     appid = scrapy.Field()
     intro = scrapy.Field()
+    company = scrapy.Field()
+    describe = scrapy.Field()
+    thumbnail_url = scrapy.Field()
+    recommended = scrapy.Field()
