@@ -4,6 +4,7 @@
   - [Ankai_Liang](https://github.com/BitTigerInst/-12WebCralwer/tree/Ankai_Liang)
   - [jenny91515](https://github.com/BitTigerInst/-12WebCralwer/tree/jenny91515)
   - [songtailun](https://github.com/BitTigerInst/-12WebCralwer/tree/songtailun)
+  - [Kristy-Luo](https://github.com/BitTigerInst/-12WebCralwer/tree/Kristy-Luo)
 
 ## Description
 We created a Scrapy project to crawl the content in the Xiaomi Appstore homepage or any other Appstore homepage. Then saved the crawled content in MongoDB. Installed Python MongoDB driver and modify pipelines.py to insert crawled data into MongoDB. Crawled more content by following next page links. 
