@@ -5,9 +5,9 @@ We will create a Scrapy project to crawl the content in the Xiaomi Appstore home
 ## Plan
 
 ### Todo List
-- [ ] Create a Scrapy project to crawl the content in the Xiaomi Appstore homepage or any other Appstore homepage
-- [ ] Save the crawled content in MongoDB
-- [ ] Crawl more content by following next page links
+- [*] Create a Scrapy project to crawl the content in the Xiaomi Appstore homepage or any other Appstore homepage
+- [*] Save the crawled content in MongoDB
+- [*] Crawl more content by following next page links
 
 ### Time Schedule
 
